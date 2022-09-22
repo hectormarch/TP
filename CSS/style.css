@@ -23,13 +23,13 @@
 }
 
 #carousel_1 {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../ba1.jpg"); 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ba1.jpg"); 
 }
 #carousel_2{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../ba2.jpg") ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ba2.jpg") ;
 }
 #carousel_3{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../ba3.jpg") ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ba3.jpg") ;
 }
 
 .carousel-control-next{
@@ -59,7 +59,7 @@ section{
 }
 
 section div:first-child{
-    background-image: url(../honolulu.jpg);
+    background-image: url(../img/honolulu.jpg);
     background-position: center;
     background-size: cover;
     height: 100%;
