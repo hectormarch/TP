@@ -1,9 +1,15 @@
 /* NAVBAR */
+.compratick{
+    display: none;
+}
 
 .navbar{
     background-color: #2C3333;
     padding: 0 5rem 0 0;
     height: auto;
+}
+.nav-link:hover, .nav-link:hover{
+    background-color: rgb(109, 170, 111);
 }
 
 @media screen and (max-width: 768px){
@@ -122,3 +128,4 @@ footer{
     }
     
 }
+
