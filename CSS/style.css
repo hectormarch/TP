@@ -8,8 +8,8 @@
     padding: 0 5rem 0 0;
     height: auto;
 }
-.nav-link:hover, .nav-link:hover{
-    background-color: rgb(109, 170, 111);
+.nav-link:hover{
+    color: white;
 }
 
 @media screen and (max-width: 768px){
@@ -127,5 +127,13 @@ footer{
         height: 140px;
     }
     
+}
+
+#result{
+    background-color: rgb(190, 190, 217);
+    padding: 100px;
+    height: 800px;
+    margin: 50px auto;
+    width: 50%;
 }
 

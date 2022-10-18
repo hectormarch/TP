@@ -45,7 +45,7 @@
                             <a class="nav-link text-secondary" href="#">Conviértete en orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-success" id="compra">Comprar tickets</a>
+                            <a class="nav-link text-success" id="compra" href="#">Comprar tickets</a>
                         </li>
                     </ul>
                 </div>
@@ -238,36 +238,46 @@
         <div class="container my-4">
             <form class="row g-3 text-center m-auto ">
                 <div class="col-md-6">
-                    <input type="name" class="form-control" id="inputEmail4" placeholder="Nombre">
+                    <input type="name" class="form-control" id="inputname" placeholder="Nombre" required>
                 </div>
                 <div class="col-md-6">
-                    <input type="name" class="form-control" id="inputPassword4" placeholder="Apellido">
+                    <input type="name" class="form-control" id="inputApellido" placeholder="Apellido" required>
                 </div>
                 <div class="col-12">
-                    <input type="email" class="form-control" id="inputAddress" placeholder="Correo">
+                    <input type="email" class="form-control" id="inputemail" placeholder="Correo" required>
                 </div>
                 <div class="col-md-6 text-start">
-                    <label for="inputAddress2" class="form-label">Cantidad</label>
-                    <input type="number" class="form-control" id="inputAddress2" placeholder="cantidad">
+                    <label for="inputcantidad" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="cantidad" placeholder="cantidad" required>
                 </div>
                 <div class="col-md-6 text-start">
                     <label for="inputState" class="form-label">Categoria</label>
-                    <select id="inputState" class="form-select">
-                        <option selected>Estudiante</option>
-                        <option>Traine</option>
-                        <option>Junior</option>
+                    <select id="inputState" class="form-select" required>
+                        <option selected value="1">Estudiante</option>
+                        <option value="2">Traine</option>
+                        <option value="3">Junior</option>
                     </select>
                 </div>
                 <div id="totalAPagar" class="col-12 d-none">
-                    <input type="text" class="form-control bg-info" style="--bs-bg-opacity:.25;" id="inputZip" placeholder="Total a Pagar:$">
+                    <input type="text" class="form-control bg-info" style="--bs-bg-opacity:.25;" id="cantidad" placeholder="Total a Pagar:$">
                 </div>
                 <div class="col-md-6">
-                    <button type="submit" class="btn btn-success">Borrar</button>
+                    <button type="" class="btn btn-success">Borrar</button>
                 </div>
                 <div class="col-md-6">
-                    <button type="submit" onclick="resumen()" class="btn btn-success">Resumen</button>
+                    <button type="submit" id="resumen_button" class="btn btn-success">Resumen</button>
                 </div>
             </form>
+        </div>
+    </div>
+
+    <!-- RESULTADO -->
+    <div id="result" class="p-auto m-auto compratick text-center">
+        <h1 class="d-inline-block text-bg-success">TOTAL A PAGAR</h1>
+        <div class="d-inline-block" >
+            <h2>$</h2>
+            <h2 id="valor"></h2>
+            
         </div>
     </div>
 
