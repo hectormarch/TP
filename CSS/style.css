@@ -55,7 +55,9 @@
     width: unset;
 }
 
-
+.but-bg:hover{
+    background-color: #198754;
+}
 
 /* TEXTO CENTRAL */
 
@@ -87,7 +89,7 @@ section div:first-child{
 @media screen and (max-width: 768px){
 
     section{
-        height:600px;
+        height:700px;
     }
     section div:first-child, section div:last-child{
         height: 50%;
@@ -120,23 +122,16 @@ footer{
     align-items: center;
     background-color: #16213E;
     color: white;
-    height: 70px;
+    height: auto;
     padding: 20px;
 }
 
-@media screen and (max-width: 768px){
-
-    footer{
-        height: 140px;
-    }
-    
-}
-
-#result{
-    background-color: rgb(190, 190, 217);
-    padding: 100px;
-    height: 800px;
-    margin: 50px auto;
-    width: 50%;
-}
-
+/* #result{
+    background-color: rgb(180, 228, 243);
+    height: 200px;
+    width: 35%;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+} */
