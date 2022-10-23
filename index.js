@@ -9,12 +9,16 @@ const tipo_de_entrada=document.getElementById('inputState').value;
 let cantidad=document.getElementById('cantidad').value;
 
 
+
 function compraT(){
     pagina.add("compratick")
     comprando.remove("compratick")
 }
 
 
+document.getElementById("boton_comprar1").addEventListener('click', compraT)
+document.getElementById("boton_comprar2").addEventListener('click', compraT)
+document.getElementById("boton_comprar3").addEventListener('click', compraT)
 compra.addEventListener("click", compraT)
 
 resultado.addEventListener("click", resumen)
