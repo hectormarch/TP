@@ -7,6 +7,7 @@ let result=document.getElementById('result').classList;
 let resultado=document.getElementById('resumen_button');
 const tipo_de_entrada=document.getElementById('inputState').value;
 let cantidad=document.getElementById('cantidad').value;
+let datos=document.getElementById('datos').classList;
 
 
 
@@ -24,8 +25,8 @@ compra.addEventListener("click", compraT)
 resultado.addEventListener("click", resumen)
 
 function resumen(){
-    comprando.add("compratick")
-    result.remove("compratick")
+    result.remove("compratick");
+    datos.add('compratick');
     if (document.getElementById('inputState').value==1){
         document.getElementById('total').innerHTML=200*0.2*document.getElementById('cantidad').value;
     } else if(document.getElementById('inputState').value==2){
@@ -33,6 +34,10 @@ function resumen(){
     } else {
         document.getElementById('total').innerHTML=200*0.85*document.getElementById('cantidad').value;
     }
-    resultado.addClass('disabled')
-
+    resultado.addClass('disabled');
+    
 }
+
+let confirmacion=document.getElementById('confirmacion');
+let volver_atras=document.getElementById("volver_atras");
+volver_atras.addEventListener("click", reload());

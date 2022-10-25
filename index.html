@@ -206,7 +206,7 @@
     
     <!-- DESCUENTOS -->
     <div class="compratick" id="comprando">
-        <div class="container my-4">
+        <div id="costo" class="container my-4">
             <div class="row g-0 justify-content-center m-3 ">
                 <div class="col-sm-3  border border-primary mx-1 p-3 text-center">
                     <h5>Estudiante</h5>
@@ -274,15 +274,16 @@
     <div id="result" class="container compratick my-4">
         <form class="row g-3 text-center m-auto ">
             
-            <h6>TOTAL A PAGAR</h6>
+            <h6>TOTAL A PAGAR EN $</h6>
             <div class="" id="resultado">
-                <p id="total"></p>
-            </div>                
+                <h1 id="total"></h1>
+            </div>
+                            
             <div class="col-md-6">
-                <button id="confirmacion" type="submit" class="btn btn-outline-success">Ir a pagar</button>
+                <button id="confirmacion" class="btn btn-outline-success">Ir a pagar</button>
             </div>
             <div class="col-md-6">
-                <button id="volver_atras" type="submit" class="btn btn-outline-secondary">Vovler atras</button>
+                <a href="/index.html"><button id="volver_atras" type="submit" class="btn btn-outline-secondary">Volver atrás</button></a>
             </div>
         </form>
     </div>

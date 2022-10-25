@@ -135,3 +135,7 @@ footer{
     text-align: center;
     align-items: center;
 } */
+#total{
+    font-size: large;
+    color: black;
+}
